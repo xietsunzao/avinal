@@ -1,0 +1,19 @@
+name: Waka Stat Update
+
+on:
+  push:
+    branches: [ master ]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    name: Update WakaTime Stat
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: pip install -r ./wakatime-stat/requirements.txt
+      - name: Run python script
+        run: python ./wakatime-stat/main.py
+        
