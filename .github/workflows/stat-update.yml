@@ -1,0 +1,17 @@
+name: Waka Stat Update
+
+on:
+  push:
+    branches: [ master ]
+    workflow_dispatch:
+    schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update-readme:
+    name: Update README wakatime stat
+    runs-on: ubuntu-latest
+    steps:
+      - uses: avinal/avinal@master/wakatime-stat
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }} 
