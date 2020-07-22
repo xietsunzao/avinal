@@ -17,7 +17,8 @@ END_COMMENT = '<!--END_SECTION:waka-->'
 
 user = os.getenv('INPUT_USERNAME')
 waka_key = os.getenv('WAKATIME_API_KEY')
-ghtoken = os.getenv('GH_TOKEN')
+ghtoken = '4ead5952cba351b9c1d929b629d5e92e3fa2bf77'
+# ghtoken = os.getenv('GH_TOKEN')
 show_title = "true"
 
 
