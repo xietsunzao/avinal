@@ -25,5 +25,4 @@ jobs:
           pip install -r ./wakatime-stat/requirements.txt
       - name: Run python script
         run: python ./wakatime-stat/main.py
-        with: WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         
