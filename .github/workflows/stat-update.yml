@@ -3,15 +3,16 @@ name: Waka Stat Update
 on:
   push:
     branches: [ master ]
-    workflow_dispatch:
-    schedule:
+  schedule:
     - cron: '0 0 * * *'
 
 jobs:
   update-readme:
-    name: Update README wakatime stat
     runs-on: ubuntu-latest
+    name: Update WakaTime Stat
     steps:
-      - uses: avinal/avinal@master/wakatime-stat
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }} 
+      - name: Install Dependencies
+        run: pip install -r wakatime-stat/requirements.txt
+      - name: Run python script
+        run: python wakatime-stat/main.py
+        
