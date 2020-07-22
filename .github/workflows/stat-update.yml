@@ -1,28 +1,15 @@
-name: Waka Stat Update
+name: Waka Readme
 
 on:
-  push:
-    branches: [ master ]
   schedule:
+    # Runs at 12am UTC
     - cron: '0 0 * * *'
 
 jobs:
   update-readme:
+    name: Update this repo's README
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-    name: Update WakaTime Stat
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Python 
-        uses: actions/setup-python@v2
+      - uses: athul/waka-readme@master
         with:
-          python-version: 3.8
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r ./wakatime-stat/requirements.txt
-      - name: Run python script
-        run: python ./wakatime-stat/main.py
-        
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
