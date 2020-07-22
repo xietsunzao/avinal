@@ -13,7 +13,7 @@ from github import Github, GithubException
 
 START_COMMENT = '<!--START_SECTION:waka-->'
 END_COMMENT = '<!--END_SECTION:waka-->'
-listReg = f"{START_COMMENT}[\\s\\S]+{END_COMMENT}"
+listReg = rf"{START_COMMENT}[\\s\\S]+{END_COMMENT}"
 
 user = os.getenv('INPUT_USERNAME')
 waka_key = os.getenv('INPUT_WAKATIME_API_KEY')
