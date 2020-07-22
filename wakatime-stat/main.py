@@ -16,9 +16,9 @@ END_COMMENT = '<!--END_SECTION:waka-->'
 # listReg = f'{START_COMMENT}[\\s\\S]+{END_COMMENT}'
 
 user = os.getenv('INPUT_USERNAME')
-waka_key = os.getenv('INPUT_WAKATIME_API_KEY')
-ghtoken = os.getenv('INPUT_GH_TOKEN')
-show_title = os.getenv("INPUT_SHOW_TITLE")
+waka_key = os.getenv('WAKATIME_API_KEY')
+ghtoken = os.getenv('GITHUB_TOKEN')
+show_title = "true"
 
 
 def this_week() -> str:
