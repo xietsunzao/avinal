@@ -22,8 +22,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r ./wakatime-stat/requirements.txt
       - name: Run python script
-        run: python ./wakatime-stat/main.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        run: python ./wakatime-stat/main.py
         
