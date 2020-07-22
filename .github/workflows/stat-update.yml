@@ -15,5 +15,5 @@ jobs:
       - name: Install Dependencies
         run: pip install -r ./wakatime-stat/requirements.txt
       - name: Run python script
-        run: python ./wakatime-stat/main.py
+        run: python3 ./wakatime-stat/main.py
         
