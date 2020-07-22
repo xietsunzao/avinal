@@ -13,13 +13,12 @@ from github import Github, GithubException
 
 START_COMMENT = '<!--START_SECTION:waka-->'
 END_COMMENT = '<!--END_SECTION:waka-->'
-# listReg = f'{START_COMMENT}[\\s\\S]+{END_COMMENT}'
+listReg = f"{START_COMMENT}[\\s\\S]+{END_COMMENT}"
 
 user = os.getenv('INPUT_USERNAME')
-waka_key = os.getenv('WAKATIME_API_KEY')
-ghtoken = '4ead5952cba351b9c1d929b629d5e92e3fa2bf77'
-# ghtoken = os.getenv('GH_TOKEN')
-show_title = "true"
+waka_key = os.getenv('INPUT_WAKATIME_API_KEY')
+ghtoken = os.getenv('INPUT_GH_TOKEN')
+show_title = os.getenv("INPUT_SHOW_TITLE")
 
 
 def this_week() -> str:
@@ -77,7 +76,7 @@ def decode_readme(data: str) -> str:
 def generate_new_readme(stats: str, readme: str) -> str:
     '''Generate a new Readme.md'''
     stats_in_readme = f"{START_COMMENT}\n{stats}\n{END_COMMENT}"
-    return re.sub(f'{START_COMMENT}[\\s\\S]+{END_COMMENT}', stats_in_readme, readme)
+    return re.sub(listReg, stats_in_readme, readme)
 
 
 if __name__ == '__main__':
