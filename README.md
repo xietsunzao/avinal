@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 
 <!--START_SECTION:waka-->
 ```text
-Week: 14 July, 2020 - 21 July, 2020
+Week: 15 July, 2020 - 22 July, 2020
 
 Markdown   3 hrs 10 mins   ████████░░░░░░░░░░░░░░░░░   35.22 % 
 C++        2 hrs 5 mins    █████░░░░░░░░░░░░░░░░░░░░   23.22 % 
