@@ -15,4 +15,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-![WakaTime Coding Avtivity](images/stat.png)
+![WakaTime Coding Avtivity](https://github.com/avinal/avinal/blob/master/images/stat.svg)
+ some
