@@ -15,14 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<!--START_SECTION:waka-->
-```text
-Week: 16 July, 2020 - 23 July, 2020
-
-Python     3 hrs 24 mins   ███████░░░░░░░░░░░░░░░░░░   28.22 % 
-Markdown   3 hrs 11 mins   ██████░░░░░░░░░░░░░░░░░░░   26.33 % 
-C++        2 hrs 5 mins    ████░░░░░░░░░░░░░░░░░░░░░   17.32 % 
-Bash       56 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.82 % 
-Text       44 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   06.16 %
-```
-<!--END_SECTION:waka-->
+![WakaTime Coding Avtivity](images/stat.svg)
