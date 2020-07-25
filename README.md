@@ -15,4 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-![WakaTime Coding Avtivity](images/stat.svg)
+![WakaTime Coding Avtivity](images/stat.png)
